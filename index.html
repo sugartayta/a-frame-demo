@@ -9,9 +9,12 @@
 </head>
 <body>
   <a-scene>
-      <a-plane rotation="-90 0 0" width="30" height="30d" src="https://cdn.aframe.io/a-painter/images/floor.jpg"></a-plane>
-      <a-box src="assets/happy-able.png"  position="0 2 -5" rotation="0 45 45" scale="2 2 2"></a-box>
-      <a-sky src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg"></a-sky>
+    <a-plane rotation="-90 0 0" width="30" height="30d" src="https://cdn.aframe.io/a-painter/images/floor.jpg"></a-plane>
+    <a-box src="assets/happy-able.png"  position="0 2 -5" rotation="0 45 45" scale="2 2 2">
+      <a-animation attribute="position" to="0 2.6 -5" direction="alternate" dur="2000"
+      repeat="indefinite"></a-animation>
+    </a-box>
+    <a-sky src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg"></a-sky>
   </a-scene>
 </body>
 </html>
