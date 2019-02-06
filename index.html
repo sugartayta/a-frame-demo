@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>A-frame Demo</title>
   <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
 </head>
 <body>
   <a-scene>
-      <a-plane rotation="-90 0 0" width="30" height="30d" src="https://cdn.aframe.io/a-painter/images/floor.jpg"></a-plane>
-      <a-box src="assets/happy-able.png"  position="0 2 -5" rotation="0 45 45" scale="2 2 2"></a-box>
-      <a-sky src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg"></a-sky>
+    <a-box src="assets/happy-able.png" position="0 2 -5" rotation="0 45 45" scale="2 2 2"></a-box>
+    <a-entity environment="preset:forest; dressingAmount:500"></a-entity>
   </a-scene>
 </body>
 </html>
